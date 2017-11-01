@@ -6,7 +6,7 @@ package com.gb.springsamples.xmlconfiguration.SpringXmlConfigurationSample;
 class BaseballCoach implements Coach{
 
     FortuneService fortuneService;
-
+public BaseballCoach(){}
     public BaseballCoach(FortuneService fortuneService){
         this.fortuneService = fortuneService;
     }
