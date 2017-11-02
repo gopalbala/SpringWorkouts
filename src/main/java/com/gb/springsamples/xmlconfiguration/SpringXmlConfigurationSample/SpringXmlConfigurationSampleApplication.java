@@ -15,6 +15,8 @@ public class SpringXmlConfigurationSampleApplication {
         Coach coach = classPathXmlApplicationContext.getBean("myCoach", Coach.class);
         System.out.println(coach.getDailyWorkout());
         System.out.println(coach.getFortune());
+
+
         classPathXmlApplicationContext.close();
     }
 }

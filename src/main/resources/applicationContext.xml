@@ -21,7 +21,10 @@
         <!--<constructor-arg name="fortuneService" ref="myFortuneService"></constructor-arg>-->
     <!--</bean>-->
 
-    <bean id="myCoach" primary="true" class="com.gb.springsamples.xmlconfiguration.SpringXmlConfigurationSample.CricketCoach" scope="prototype">
+
+    <!--scope="prototype"-->
+    <bean id="myCoach" primary="true" class="com.gb.springsamples.xmlconfiguration.SpringXmlConfigurationSample.CricketCoach"
+        init-method="customInit" destroy-method="customDestroy">
         <property name="fortuneService" ref="myFortuneService"></property>
         <property name="teamName" value="${teamName}"></property>
         <property name="emailAddress" value="${email}"></property>

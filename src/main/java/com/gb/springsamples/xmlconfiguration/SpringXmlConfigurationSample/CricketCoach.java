@@ -46,4 +46,12 @@ public class CricketCoach implements Coach {
     public String getFortune() {
         return getFortuneService().getFortune();
     }
+
+    public void customInit(){
+        System.out.println("Bean custom initilization...");
+    }
+
+    public void customDestroy(){
+        System.out.println("Finialize the referece handles...");
+    }
 }

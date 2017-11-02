@@ -29,3 +29,7 @@ Customn initialization code
 Bean is ready for use
 Custom destroy method
 Stop
+
+Init and Destroy methods must be public, void and must not have any arguments.
+
+Prototype bean destroy will not be handled by spring container
